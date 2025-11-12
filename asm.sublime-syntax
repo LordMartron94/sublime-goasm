@@ -402,6 +402,12 @@ contexts:
         1: punctuation.accessor.asm
         2: keyword.asm
 
+    - match: '(\/)([1248])(?=\s|,|$)'
+      scope: constant.numeric.width.asm
+      captures:
+        1: punctuation.separator.width.asm
+        2: constant.numeric.integer.asm
+
   # Uses an "extended" identifier which may contain a dot,
   # because some instruction names contain one.
   ident-instr:
